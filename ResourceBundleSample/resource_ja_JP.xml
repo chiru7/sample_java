@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE properties SYSTEM "http://java.sun.com/dtd/properties.dtd">
+<properties>
+<comment>resource_ja_JP.xml</comment>
+
+<!-- 文字列テスト  -->
+<entry key="key.string">resource_ja_JP.xml</entry>
+
+<!-- 配列テスト  -->
+<entry key="key.string.array">hoge,fuga</entry>
+
+<!-- 改行を含む文字列テスト  -->
+<entry key="key.string.cdata"><![CDATA[
+SELECT *
+  FROM hoge
+ WHERE fuga = ?]]></entry>
+
+<!-- 数値テスト  -->
+<entry key="key.int">1</entry>
+
+</properties>
