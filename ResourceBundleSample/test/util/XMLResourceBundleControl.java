@@ -23,9 +23,9 @@ public class XMLResourceBundleControl extends Control {
 	}
 
 	public long getTimeToLive(String baseName, Locale locale) {
-        // キャッシュ期間(ミリ秒)
-        return 2 * 1000;
-    }
+	    // キャッシュ期間(ミリ秒)
+	    return 2 * 1000;
+	}
 
 	public ResourceBundle newBundle(String baseName, Locale locale,
 			String format, ClassLoader loader, boolean reload)
