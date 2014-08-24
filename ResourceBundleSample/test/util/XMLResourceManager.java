@@ -47,33 +47,7 @@ public class XMLResourceManager {
 		}
 		return defaultValue;
 	}
-
-	/**
-	 * システム設定値を数値で取得します。<br>
-	 *
-	 * @param id キーID
-	 * @return システム設定値
-	 */
-	public static long getLong(String id) {
-		return getLong(id, Long.MIN_VALUE);
-	}
-
-	/**
-	 * システム設定値を数値で取得します。<br>
-	 *
-	 * @param id キーID
-	 * @param defaultValue 初期値
-	 * @return システム設定値
-	 */
-	public static long getLong(String id, long defaultValue) {
-		try {
-			return Long.parseLong(getString(id));
-		} catch(Exception e) {
-			//
-		}
-		return defaultValue;
-	}
-
+	
 	/**
 	 * システム設定値を取得します。<br>
 	 *
@@ -128,15 +102,5 @@ public class XMLResourceManager {
 			e.printStackTrace();
 		}
 		return result;
-	}
-
-	/**
-	 * システム設定値を論理値で取得します。<br>
-	 *
-	 * @param id キーID
-	 * @return 論理値 false:未登録、又は"true"以外(大文字/小文字無視)
-	 */
-	public static final boolean getBoolean(String id) {
-		return Boolean.parseBoolean(getString(id));
 	}
 }
